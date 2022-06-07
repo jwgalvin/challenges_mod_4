@@ -2,7 +2,14 @@
 
 #recursive case = when to continue and inch towards the final result
 
-
+#what do I want the output to look like?
+#what arguments do I need to call?
+    #sorted_menu, receipts, working total?
+#when to end
+   #when receipts.length = 0 ?
+   #output = Object and quantity.
+   #Pull out first receipt value, and compare to the sorted_menu items if receipt is less than menu item, skip to next menu item.
+   # if receipt is greater than menu item, if the == 0 return output.
 
 require 'pry'
 # menu = {
@@ -21,6 +28,9 @@ require 'pry'
 
 # The first thing to do is to make sure that only menu items that have a total less than the receipt total are used in the calculation to come up with the result.
 # After you have that, start with the most expensive item available and subtract its value from the total, then see if any other menu item equals the remainder, or is a multiple of the remainder, or if another item can fit within the remainder of the remainder.
+#while loop?
+
+
 # class Magic
 #   def initialize
     @menu = {
@@ -38,11 +48,14 @@ require 'pry'
   sorted_menu = @menu.sort_by {|k,v| -v}
   binding.pry
   receipts = [4.85, 11.05, 13.75, 17.75, 18.25, 19.40, 28.25, 40.30, 75.00]
-  def find_order(value, sorted_menu)
 
+
+  def find_order(receipts, sorted_menu)
+    while
+    end
   end
 
   receipts.each do |value|
-    find_order(value, sorted_menu)
+    find_order(receipts, sorted_menu)
   end
 # end
