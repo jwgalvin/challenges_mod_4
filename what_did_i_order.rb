@@ -51,8 +51,9 @@ require 'pry'
 
 
   def find_order(receipts, sorted_menu)
-    while
-    end
+    #for i = 0; i < receipt.length, i++
+    #if receipt > menu[i]
+      #new_total = receipt - menu[i].value
   end
 
   receipts.each do |value|
