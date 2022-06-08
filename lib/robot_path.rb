@@ -12,38 +12,37 @@
 #Assuming North is the starting direction for all directions
 #assume 2 dimensional movement on X,Y Axis, and only 'L', 'R', or 'G' are valid instructions.
 # Return "returned home" or "lost in the gloom"
-class love_death_robots
+class LoveDeathNRobots
 
   def initialize
-    @direction = { 'N' => 0, 'E' => 1, 'S' => 2, 'W' => 3}
     @init_X = 0
     @init_Y = 0
   end
 
   def return_to_origin(orders)
     commands = orders.chars.capitalize()  #cap may not be necessary
-    temp_x = @init_X
-    temp_y = @init_Y
-    direction = @direction[0].keys
-    count = 0
+    x = @init_X
+    y = @init_Y
+    results = ["Robot returned home", "Robot died in the wastes"]
     while commands.count > 0
       case orders
-      when commands[count] == "G"
+      when commands[0] == "G"
         if order == "G" && direction == "N"
-          temp_y += 1
+          y += 1
           commands = commands.shift
         elsif order == "G" && direction == "E"
-          temp_x += 1
+          x += 1
           commands = commands.shift
         elsif order == "G" && direction == "S"
-          temp_y -= 1
+          y -= 1
           commands = commands.shift
         else order == "G" && direction == "W"
-          temp_x -= 1
+          x -= 1
           commands = commands.shift
         end
       end
-      when commands[count] == "L"
+
+      when commands[0] == "L"
         if direction == "N"
           direction = "W"
           commands = commands.shift
@@ -58,7 +57,8 @@ class love_death_robots
           commands = commands.shift
         end
       end
-      when commands[count] == "R"
+
+      when commands[0] == "R"
         if direction == "N"
           direction = "E"
           commands = commands.shift
@@ -73,7 +73,12 @@ class love_death_robots
           commands = commands.shift
         end
       end
-    end
-  end
 
+      if x == 0 && y == 0
+        puts results[0]
+        return results[0]
+      else
+        puts results[1]
+        return results[1]
+      end
 end
