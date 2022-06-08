@@ -67,7 +67,7 @@ class LoveDeathNRobots
   end
 
   def return_to_origin(orders)
-    commands = orders.chars  #cap may not be necessary
+    commands = orders.chars  #cap may be necessary
     @x = @init_X
     @y = @init_Y
     @direction = "N"
