@@ -17,8 +17,6 @@ require 'pry'
 class LoveDeathNRobots
 
   def initialize
-    @init_X = 0
-    @init_Y = 0
     @results = ["Robot returned home", "Robot died in the wastes"]
   end
 
@@ -54,7 +52,7 @@ class LoveDeathNRobots
     end
   end
 
-  def move_fwd(direction, x, y )
+  def move_fwd(direction, x, y)
     if direction == "N"
       @y = y += 1
     elsif direction == "E"
@@ -68,8 +66,8 @@ class LoveDeathNRobots
 
   def return_to_origin(orders)
     commands = orders.chars  #cap may be necessary
-    @x = @init_X
-    @y = @init_Y
+    @x = 0
+    @y = 0
     @direction = "N"
     while commands.count > 0
       if commands[0] == "R"
