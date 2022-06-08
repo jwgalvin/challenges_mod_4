@@ -19,65 +19,71 @@ class LoveDeathNRobots
   def initialize
     @init_X = 0
     @init_Y = 0
+    @results = ["Robot returned home", "Robot died in the wastes"]
+  end
+
+  def check_home(x,y)
+    if x == 0 && y == 0
+      return @results[0]
+    else
+      return @results[1]
+    end
+  end
+
+  def turn_right(direction)
+    if direction == "N"
+      @direction = "E"
+    elsif direction == "E"
+      @direction = "S"
+    elsif direction == "S"
+      @direction = "W"
+    elsif direction == "W"
+      @direction = "N"
+    end
+  end
+
+  def turn_left(direction)
+    if direction == "N"
+      @direction = "W"
+    elsif direction == "W"
+      @direction = "S"
+    elsif direction == "S"
+      @direction = "E"
+    elsif direction == "E"
+      @direction = "N"
+    end
+  end
+
+  def move_fwd(direction, x, y )
+    if direction == "N"
+      @y = y += 1
+    elsif direction == "E"
+      @x = x += 1
+    elsif direction == "S"
+      @y = y -= 1
+    elsif direction == "W"
+      @x = x -= 1
+    end
   end
 
   def return_to_origin(orders)
     commands = orders.chars  #cap may not be necessary
-    x = @init_X
-    y = @init_Y
-    results = ["Robot returned home", "Robot died in the wastes"]
+    @x = @init_X
+    @y = @init_Y
     @direction = "N"
     while commands.count > 0
-      #binding.pry
-
-    if commands[0] == "R"
-      if commands[0] == "R" && @direction == "N"
-        @direction = "E"
-        #commands.shift
-        #binding.pry
-      elsif commands[0] == "R" && @direction == "E"
-        @direction = "S"
-        #commands.shift
-        #binding.pry
-      elsif commands[0] == "R" && @direction == "S"
-        @direction = "W"
-        #commands.shift
-        #binding.pry
-      else commands[0] == "R" && @direction == "W"
-        @direction = "N"
-
+      if commands[0] == "R"
+        turn_right(@direction)
+        commands.shift
+      elsif commands[0] == "L"
+        turn_left(@direction)
+        commands.shift
+      elsif commands[0] == "G"
+        move_fwd(@direction, @x, @y)
+        commands.shift
       end
-      commands.shift
-    elsif commands[0] == "L"
-      if commands[0] == "L" && @direction == "N"
-        @direction = "W"
-      elsif commands[0] == "L" && @direction == "W"
-        @direction = "S"
-      elsif commands[0] == "L" && @direction == "S"
-        @direction = "E"
-      else commands[0] == "L" && @direction == "E"
-        @direction = "N"
-      end
-      commands.shift
-    elsif commands[0] == "G"
-      if commands[0] == "G" && @direction == "N"
-        y += 1
-      elsif commands[0] == "G" && @direction == "E"
-        x += 1
-      elsif commands[0] == "G" && @direction == "S"
-        y -= 1
-      elsif commands[0] == "G" && @direction == "W"
-        x -= 1
-      end
-      commands.shift
     end
+    check_home(@x,@y)
   end
-    if x == 0 && y == 0
-      puts results[0]
-      return results[0]
-    else
-      puts results[1]
-      return results[1]
-    end
-end
+
 end
