@@ -1,8 +1,12 @@
 require 'rspec'
 require 'pry'
-require './lib/last_digit'
+require './lib/narcissit'
 
 RSpec.describe " dumb stuff" do
   it "test to see how far off I am" do
-    int = [2,0,8]
-    last = LastDigit.new
+    int = 153
+    number = Narcissistic.new
+
+    expect(number.is_narcissistic?(int)).to eq(true)
+  end
+end
