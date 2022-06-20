@@ -10,12 +10,29 @@ require 'pry'
 class MagicPowers
 
 
-  def powers_of_2(power)
+  # def powers_of_2(power)
+  #   counter = 0
+  #   array = []
+  #   until counter == power
+  #     array << (2 ** counter)
+  #     counter += 1
+  #   end
+  #   array
+  # end
+
+  def powers_case(power)
     counter = 0
     array = []
-    until counter == power
-      array << (2 ** counter)
-      counter += 1
+    if power == 0
+      array << 1
+    elsif power == 1
+      array = [1,2]
+    else
+      until counter == power
+        # binding.pry
+        array << (2 ** counter)
+        counter += 1
+      end
     end
     array
   end
