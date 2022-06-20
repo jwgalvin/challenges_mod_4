@@ -12,7 +12,7 @@ require 'pry'
 #
 # This kata generalizes Last digit of a large number; you may find useful to solve it beforehand.
 
-#likely incomplete. Definitely lacking comprehension of what is going on. https://brilliant.org/wiki/finding-the-last-digit-of-a-power/
+# INCOMPLETE. Definitely lacking comprehension of what is going on. https://brilliant.org/wiki/finding-the-last-digit-of-a-power/
 class LastDigit
   def the_thing(array)
     digit = array.last
