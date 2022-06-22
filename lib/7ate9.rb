@@ -15,7 +15,6 @@ class HungrySevens
       when num == 9
         if buffet[index -1] == 7 && buffet[index +1] == 7
           buffet.delete_at(index)
-          #binding.pry
         end
       end
     end
