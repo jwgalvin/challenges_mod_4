@@ -1,4 +1,6 @@
-# Start here to explore what is a linked list.
+# this is way to hard at this time
+
+#Start here to explore what is a linked list.
 #
 # In this challenge, imagine you are given two sorted linked lists.
 #
