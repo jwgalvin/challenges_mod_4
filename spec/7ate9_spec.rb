@@ -21,4 +21,10 @@ RSpec.describe " checks challenges" do
     hungry = HungrySevens.new
     expect(hungry.seven_ate9(string)).to eq("79977")
   end
+
+  it "tests for 0's" do
+    string = "0799797"
+    hungry = HungrySevens.new
+    expect(hungry.seven_ate9(string)).to eq("079977")
+  end
 end
