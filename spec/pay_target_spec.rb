@@ -26,4 +26,12 @@ RSpec.describe " checks challenges" do
     red_october = TargetPayload.new
     expect(red_october.find_target(solution, target)).to eq([])
   end
+
+  it "see if I get the expected array" do
+    solution = [-3, 4, 2, 6, 40, -4]
+    target = 8
+
+    red_october = TargetPayload.new
+    expect(red_october.find_target(solution, target)).to eq([2, 6])
+  end
 end
