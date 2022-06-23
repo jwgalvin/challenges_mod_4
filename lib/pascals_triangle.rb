@@ -28,7 +28,4 @@ class PascalTri
     end
   end
 
-  # def pascals_row(row)
-  #   ([0] + n).zip(n + [0]).collect { |a, b| a + b }
-  # end
 end
