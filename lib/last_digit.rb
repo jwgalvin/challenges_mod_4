@@ -17,7 +17,7 @@ class LastDigit
   def the_thing(array)
     digit = array.last
     count = array.count
-    #binding.pry
+
     digit_of_power(digit, count)
   end
 
@@ -27,10 +27,8 @@ class LastDigit
     when 0, 1, 5, 6 then digit
     else
       digit_of_square = digit * digit
-
       if n.even?
         result = digit_of_power(digit_of_square, n / 2)
-        binding.pry
       else
         result = digit * digit_of_power(digit_of_square, (n - 1) / 2) % 10
       end
