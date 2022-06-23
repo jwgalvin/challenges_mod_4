@@ -18,3 +18,8 @@
 # The middle character(s) of the word represented as a string.
 
 # take in a string and convert to an array. Find the middle character. If there is an even number find the middle to. return the middle characters.
+
+class Malcolm
+
+
+end
