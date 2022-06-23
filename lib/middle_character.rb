@@ -18,8 +18,20 @@
 # The middle character(s) of the word represented as a string.
 
 # take in a string and convert to an array. Find the middle character. If there is an even number find the middle to. return the middle characters.
-
+require 'pry'
 class Malcolm
 
-
+  def get_middle(s)
+    malcolm = s.split(//)
+    middle = []
+    case
+    when s.length.even?
+      middle << malcolm[malcolm.length/2-1]
+      middle << malcolm[malcolm.length/2]
+      return middle = middle.join
+    else
+      middle << malcolm[malcolm.length/2.round]
+      return middle[0]
+    end
+  end
 end
