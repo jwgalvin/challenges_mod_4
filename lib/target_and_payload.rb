@@ -19,13 +19,11 @@ class TargetPayload
 
   def find_target(sol, target)
     array = []
-
-    sol.each do |int|
-      sol.each_with_index do |num, index|
-      #binding.pry
-        if num + int == target
+    sol.each_with_index do |int, index|
+      sol.each_with_index do |num, index1|
+        if num + int == target && index != index1
           array << int
-          array << sol[index]
+          array << sol[index1]
           return array
         end
       end
