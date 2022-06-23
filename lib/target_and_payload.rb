@@ -14,3 +14,23 @@
 #     => [-3, 18]
 #     find_target([-3, -34, 2, 6, 40, -4], 1)
 #     => []
+
+class TargetPayload
+
+  def find_target(sol, target)
+    array = []
+
+    sol.each do |int|
+      sol.each_with_index do |num, index|
+      #binding.pry
+        if num + int == target
+          array << int
+          array << sol[index]
+          return array
+        end
+      end
+    end
+    return array
+  end
+
+end
