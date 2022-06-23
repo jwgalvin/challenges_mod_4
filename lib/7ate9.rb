@@ -10,6 +10,11 @@ class HungrySevens
 
   def seven_ate9(str)
     buffet = str.to_i.digits.reverse
+    #binding.pry
+    case
+    when buffet.count < str.length
+      buffet.unshift(0)
+    end
     buffet.each_with_index do |num, index|
       case
       when num == 9
