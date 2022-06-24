@@ -12,3 +12,13 @@
 # time = 6.7---> litres = 3
 #
 # time = 11.8--> litres = 5
+require  'pry'
+
+class Hydrate
+
+  def litres(time)
+    time = time.to_i
+    litres = time * 0.5
+    litres.to_i
+  end
+end
