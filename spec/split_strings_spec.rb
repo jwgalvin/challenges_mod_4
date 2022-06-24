@@ -8,4 +8,10 @@ RSpec.describe " checks challenges" do
     split_me = Splitter.new
     expect(split_me.solution(string)).to eq(['ab', 'c_'])
   end
+
+  it "splits a string into an array" do
+    string = 'abcdef'
+    split_me = Splitter.new
+    expect(split_me.solution(string)).to eq(['ab', 'cd', 'ef'])
+  end
 end
