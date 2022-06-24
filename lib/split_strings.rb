@@ -10,4 +10,18 @@ require 'pry'
 class Splitter
 
   def solution(string)
+    array = string.split(//)
+    counter = array.count
+    output = []
+    until array == []
+      if array.count == 1
+        array << "_"
+      end
+      output << (array[0] + array[1])
+      array = array.drop(2)
+    end
+
+    return output
+  end
+
 end
