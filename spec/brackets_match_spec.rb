@@ -8,11 +8,13 @@ RSpec.describe " checks challenges" do
     check = PairedBrackets.new
     expect(check.matched_set?(string)).to eq(true)
   end
+
   it "see if I get the expected array" do
     string = '{()}'
     check = PairedBrackets.new
     expect(check.matched_set?(string)).to eq(true)
   end
+
   it "see if I get the expected array" do
     string = '({[]}{[]})'
     check = PairedBrackets.new
@@ -24,11 +26,13 @@ RSpec.describe " checks challenges" do
     check = PairedBrackets.new
     expect(check.matched_set?(string)).to eq(false)
   end
+
   it "see if I get the expected array" do
     string = '{[)][]}'
     check = PairedBrackets.new
     expect(check.matched_set?(string)).to eq(false)
   end
+  
   it "see if I get the expected array" do
     string = ']'
     check = PairedBrackets.new
