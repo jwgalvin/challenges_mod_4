@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/keep_hydrated'
+require './lib/completed/keep_hydrated'
 
 RSpec.describe " checks challenges" do
   it "see if I round the right way" do

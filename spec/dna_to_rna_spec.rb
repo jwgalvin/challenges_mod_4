@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/dna_to_rna'
+require './lib/completed/dna_to_rna'
 
 RSpec.describe " checks challenges" do
   it "converts t's to u's" do

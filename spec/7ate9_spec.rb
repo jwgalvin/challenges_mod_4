@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/7ate9'
+require './lib/completed/7ate9'
 
 RSpec.describe " checks challenges" do
   it "remove the 9's that are surrounded by 7's" do
