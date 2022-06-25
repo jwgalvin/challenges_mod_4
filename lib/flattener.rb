@@ -15,3 +15,20 @@
 #     nums = [1, 2, 3, [[4], 5], [[[6]]]]
 #     words = ["hi", "this is", [[["string"], "that is very"], [[[["nested"]]]]]]
 # The contents of the array are not significant. Your method/function should take an input of a multi-dimensional array and output a one-dimensional array. More simply put, remove the deeply nested brackets to return a single array.
+
+require 'pry'
+
+class Flattner
+
+  def flattened(array, new_array = [])
+    array.each do |element|
+      if element.class == Array
+        flattened(element, new_array)
+      else
+        new_array << element
+      end
+    end
+    new_array
+  end
+
+end
