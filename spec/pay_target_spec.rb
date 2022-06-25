@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/target_and_payload'
+require './lib/completed/target_and_payload'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
