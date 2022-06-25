@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/flattener'
+require './lib/completed/flattener'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
