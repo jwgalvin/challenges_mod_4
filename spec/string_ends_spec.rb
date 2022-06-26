@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-require './libflattener'
-#require './lib/completed/flattener'
+require './lib/string_ends?'
+#require './lib/completed/string_ends?'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected string" do
