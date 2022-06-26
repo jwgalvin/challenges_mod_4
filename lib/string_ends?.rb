@@ -11,7 +11,7 @@ require 'pry'
 class StringEnd
 
   def solution(string1, string2)
-
+    string1.end_with?(string2)
   end
 
 end
