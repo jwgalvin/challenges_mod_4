@@ -4,3 +4,14 @@
 #
 # solution('abc', 'bc') // returns true
 # solution('abc', 'd') // returns false
+
+
+require 'pry'
+
+class StringEnd
+
+  def solution(string1, string2)
+
+  end
+
+end
