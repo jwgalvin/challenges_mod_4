@@ -14,4 +14,14 @@
 
 class Croquet
     def open_or_senior(data)
+        results = []
+        data.each do |member|
+            if member[0] >= 55 && member[1] > 7
+                results << "Senior"
+            else
+                results << "Open"
+            end
+        end
+        results
+    end
 end
