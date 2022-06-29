@@ -13,5 +13,5 @@
 # output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 class Croquet
-
+    def open_or_senior(data)
 end
