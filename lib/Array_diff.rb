@@ -6,3 +6,16 @@
 # If a value is present in b, all of its occurrences must be removed from the other:
 
 # array_diff([1,2],[1]) == [2]
+
+class Difference
+    def array_diff(a, b)
+        if b == []
+            return a
+        else
+            b.each do |ele1|
+                a.delete(ele1)
+            end
+        end
+        return a
+    end
+end
