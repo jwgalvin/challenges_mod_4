@@ -1,7 +1,6 @@
 require 'rspec'
 require 'pry'
-#require './lib/completed/Array_diff'
-require './lib/Array_diff'
+require './lib/completed/Array_diff'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
