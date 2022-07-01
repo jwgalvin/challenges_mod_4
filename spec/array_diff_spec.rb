@@ -5,9 +5,11 @@ require './lib/Array_diff'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
-    arrays = [1,2],[1]
-    check = PairedBrackets.new
-    expect(check.matched_set?(string)).to eq(true)
+    a = [1,2]
+    b = [1]
+    check = Difference.new
+    expect(arrays.array)diff(a, b)).to eq([2])
   end
+  
   
 end
