@@ -4,9 +4,14 @@
 
 # Note: The function accepts an integer and returns an integer
 
-Class SquareEach
+class SquareEach
 
     def square_digits(int)
-
+        to_square = int.digits.reverse
+        squared = []
+        to_square.each do |int|
+            squared << int * int
+        end
+        squared.join.to_i
     end
 end
