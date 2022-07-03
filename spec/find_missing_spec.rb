@@ -5,10 +5,10 @@ require './lib/find_missing'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
-    int = 9119
+    array = [1, 3, 5, 9, 11]
    
-    to_sq = SquareEach.new
-    expect(to_sq.square_digits(int)).to eq(811181)
+    absent_father = FindMissing.new
+    expect(absent_father.find_missing(array)).to eq(7)
   end
   
 end
