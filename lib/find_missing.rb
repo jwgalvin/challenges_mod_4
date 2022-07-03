@@ -7,5 +7,28 @@
 # PS: This is a sample question of the facebook engineer challenge on interviewstreet. I found it quite fun to solve on paper using math, derive the algo that way. Have fun!
 
 class FindMissing
-
+    def find_missing(arr)
+        dif = 0
+        new_array = []
+        arr.each_with_index do |int, index1|
+            #binding.pry
+            if index1 == 0
+                dif = arr[index1 + 1] - int
+                new_array << dif
+            elsif index1 <= (arr.count-2) 
+                new_array  << ((arr[index1+1]) - int)
+            end
+        end
+        new_array.each_with_index do |diff, index2|
+            #binding.pry
+            if dif > diff
+                #binding.pry
+                return (arr[index2-1] + diff)
+            end
+            if diff > dif
+                #binding.pry
+                return (arr[index2] + dif)
+            end
+        end
+    end 
 end
