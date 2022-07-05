@@ -5,8 +5,16 @@ require './lib/completed/find_missing'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
-    array = [1, 3, 5, 9, 11]
+    int = 2
    
-    absent_father = FindMissing.new
-    expect(absent_father.find_missing(array)).to eq(7)
+    sum_me = Summation.new
+    expect(sum_me.summation(int)).to eq(3)
   end
+
+  it "see if I get the expected array" do
+    int = 8
+   
+    sum_me = Summation.new
+    expect(sum_me.summation(int)).to eq(8)
+  end
+end
