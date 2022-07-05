@@ -1,7 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/find_even_index'
-#require './lib/completed/find_even_index'
+require './lib/completed/find_even_index'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected result" do
