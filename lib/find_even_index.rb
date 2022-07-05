@@ -26,3 +26,18 @@
 
 # Note:
 # If you are given an array with multiple answers, return the lowest correct index.
+
+class FindEven
+
+    def find_even_index(arr)
+        left = 0
+        right = arr.reduce(:+)
+
+        arr.each_with_index do |ele, index|
+            right -= ele
+            return index if left == right
+            left += ele
+        end
+        return -1
+    end
+end
