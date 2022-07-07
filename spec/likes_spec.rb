@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-#require './lib/grass_summation'
-require './lib/completed/grass_summation'
+require './lib/likes'
+#require './lib/completed/likes'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
