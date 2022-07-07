@@ -13,6 +13,7 @@
 
 class StringToInt
     def string_to_number(s)
-       return s.to_i
+    #    return s.to_i
+    Integer(s)
     end
 end
