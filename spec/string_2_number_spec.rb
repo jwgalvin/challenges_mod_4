@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-require './lib/string_2_number'
-#require './lib/completed/string_2_number'
+#require './lib/string_2_number'
+require './lib/completed/string_2_number'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
