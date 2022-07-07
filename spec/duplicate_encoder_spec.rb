@@ -16,5 +16,11 @@ RSpec.describe " checks challenges" do
   encode_me = DupeEncoder.new
     expect(encode_me.duplicate_encode(word)).to eq("()()()")
   end
+  it "see if I get the expected array" do
+    word = "Success"
+   
+  encode_me = DupeEncoder.new
+    expect(encode_me.duplicate_encode(word)).to eq(")())())")
+  end
   
 end
