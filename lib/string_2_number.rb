@@ -10,3 +10,9 @@
 # "605"  --> 605
 # "1405" --> 1405
 # "-7" --> -7
+
+class StringToInt
+    def string_to_number(s)
+       return s.to_i
+    end
+end
