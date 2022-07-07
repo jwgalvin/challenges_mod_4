@@ -10,7 +10,6 @@
 require 'pry'
 class DupeEncoder
     def duplicate_encode(word)
-        array = word.downcase.split(//)
         word.downcase.chars.map do |char|
             if word.count(char) > 1
                 ")"
