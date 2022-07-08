@@ -4,5 +4,14 @@
 
 class Pangram
     def pangram?(string)
-    end
+        chars = ('a'..'z').to_a
+        check = string.downcase.split("").uniq
+        check.each do |char|
+            if chars.include?(char)
+                chars.delete(char)
+            end
+        end
+        return true if chars == []
+        return false if chars != []
+    end  
 end
