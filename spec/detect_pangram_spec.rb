@@ -5,7 +5,8 @@ require './lib/detect_pangram'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
-    member_list = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
-    list = Croquet.new
-    expect(list.open_or_senior(member_list)).to eq(["Open", "Open", "Senior", "Open", "Open", "Senior"])
+    member_list = "Nymphs blitz quick vex dwarf jog"
+    check = Pangram.new
+    expect(check.pangram?(string)).to eq(true])
   end
+end
