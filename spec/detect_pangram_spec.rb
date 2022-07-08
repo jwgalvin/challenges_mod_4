@@ -15,4 +15,10 @@ RSpec.describe " checks challenges" do
     check = Pangram.new
     expect(check.pangram?(string)).to eq(true)
   end
+
+  it "returns false" do
+    string = "A quick brown fox jumps over the lazy"
+    check = Pangram.new
+    expect(check.pangram?(string)).to eq(false)
+  end
 end
