@@ -6,11 +6,12 @@
 
 class Reverser
     def reverse_words(str)
-        arr = str.scan(/\s+|\S+/)
-        reversed = []
-        arr.each do |word|
-            reversed << word.reverse
-        end
-        reversed.join
+        # arr = str.scan(/\s+|\S+/)
+        # reversed = []
+        # arr.each do |word|
+        #     reversed << word.reverse
+        # end
+        # reversed.join
+        str.gsub(/\S+/, &:reverse)
     end
 end
