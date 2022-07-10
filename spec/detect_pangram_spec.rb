@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-#require './lib/completed/detect_pangram'
-require './lib/detect_pangram'
+require './lib/completed/detect_pangram'
+
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
