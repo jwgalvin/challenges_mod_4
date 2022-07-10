@@ -15,4 +15,11 @@ RSpec.describe " checks challenges" do
     check = CentYear.new
     expect(check.century(int)).to eq(19)
   end
+
+  it "see if I get the expected int" do
+    int = 116
+    check = CentYear.new
+    
+    expect(check.century(int)).to eq(2)
+  end
 end
