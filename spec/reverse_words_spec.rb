@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-# require './lib/completed/reverse_words'
-require './lib/reverse_words'
+require './lib/completed/reverse_words'
+
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected sentences" do
