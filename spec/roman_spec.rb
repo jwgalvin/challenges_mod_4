@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/roman_numeral'
+require './lib/ruby_challenges/completed/roman_numeral'
 
 RSpec.describe " dumb stuff" do
 

@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-#require './lib/square_digits'
-require './lib/completed/square_digits'
+#require './lib/ruby_challenges/square_digits'
+require './lib/ruby_challenges/completed/square_digits'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do
