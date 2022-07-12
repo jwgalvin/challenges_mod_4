@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/middle_character'
+require './lib/ruby_challenges/completed/middle_character'
 
 RSpec.describe " checks challenges" do
   it "gets the middle_character of an odd one" do

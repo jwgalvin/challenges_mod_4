@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/next_palindrome'
+require './lib/ruby_challenges/completed/next_palindrome'
 
 
 

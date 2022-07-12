@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/find_missing'
+require './lib/ruby_challenges/completed/find_missing'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do

@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/split_strings'
+require './lib/ruby_challenges/completed/split_strings'
 
 RSpec.describe " checks challenges" do
   it "splits a string into an array" do

@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-#require './lib/duplicate_encoder'
-require './lib/completed/duplicate_encoder'
+#require './lib/ruby_challenges/duplicate_encoder'
+require './lib/ruby_challenges/completed/duplicate_encoder'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do

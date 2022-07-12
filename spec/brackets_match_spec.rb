@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/bracket_matcher'
+require './lib/ruby_challenges/completed/bracket_matcher'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do

@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/cate_new_member'
+require './lib/ruby_challenges/completed/cate_new_member'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do

@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/snail'
+require './lib/ruby_challenges/completed/snail'
 
 RSpec.describe " checks challenges" do
   it "sorts the array logarthimatically?" do

@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/palindromic_sum'
+require './lib/ruby_challenges/completed/palindromic_sum'
 
 
 

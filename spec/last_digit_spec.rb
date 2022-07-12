@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/last_digit'
+require './lib/ruby_challenges/last_digit'
 
 RSpec.describe " dumb stuff" do
   it "test to see how far off I am" do

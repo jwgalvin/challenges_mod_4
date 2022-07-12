@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/powers_2'
+require './lib/ruby_challenges/completed/powers_2'
 
 RSpec.describe " dumb stuff" do
   it "see if I get the expected array" do

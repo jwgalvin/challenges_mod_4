@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/narcissit'
+require './lib/ruby_challenges/completed/narcissit'
 
 RSpec.describe " dumb stuff" do
   it "test to see how far off I am" do

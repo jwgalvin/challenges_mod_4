@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/pascals_triangle'
+require './lib/ruby_challenges/completed/pascals_triangle'
 
 RSpec.describe " checks challenges" do
   it "see if I get the 1st expected array" do

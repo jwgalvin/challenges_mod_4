@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/robot_path'
+require './lib/ruby_challenges/completed/robot_path'
 
 
 

@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/cent_to_year'
+require './lib/ruby_challenges/completed/cent_to_year'
 
 
 RSpec.describe " checks challenges" do

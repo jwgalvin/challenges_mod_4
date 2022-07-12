@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
 
-require './lib/completed/string_ends?'
+require './lib/ruby_challenges/completed/string_ends?'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected string" do

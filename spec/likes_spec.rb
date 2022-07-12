@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-#require './lib/likes'
-require './lib/completed/likes'
+#require './lib/ruby_challenges/likes'
+require './lib/ruby_challenges/completed/likes'
 
 RSpec.describe " checks challenges" do
   it "see if I get the expected array" do

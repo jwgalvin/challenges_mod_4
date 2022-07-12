@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/detect_pangram'
+require './lib/ruby_challenges/completed/detect_pangram'
 
 
 RSpec.describe " checks challenges" do

@@ -1,6 +1,6 @@
 require 'rspec'
 require 'pry'
-require './lib/completed/reverse_words'
+require './lib/ruby_challenges/completed/reverse_words'
 
 
 RSpec.describe " checks challenges" do
